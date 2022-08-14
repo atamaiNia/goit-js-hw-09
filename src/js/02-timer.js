@@ -135,7 +135,7 @@ const options = {
   minuteIncrement: 1,
   onClose(selectedDates) {
     if (selectedDates[0] < Date.now()) {
-      Notiflix.Notify.failure('Please choose a date in the future', {
+      Notify.failure('Please choose a date in the future', {
         position: 'left-top',
         fontSize: '20px',
         width: '400px',
