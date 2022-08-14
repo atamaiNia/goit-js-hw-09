@@ -139,6 +139,10 @@ const options = {
         position: 'left-top',
         fontSize: '20px',
         width: '400px',
+        failure: {
+          background: '#663399',
+          textColor: '#ffffff',
+        },
       });
       selectedDates[0] = new Date();
       refs.btnStart.disabled = true;
