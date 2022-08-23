@@ -171,7 +171,7 @@ function onStartCountdown() {
     refs.minutes.textContent = addLeadingZero(minutes);
     refs.seconds.textContent = addLeadingZero(seconds);
 
-    if ((days === 0) & (hours === 0) & (minutes === 0) & (seconds === 0)) {
+    if (days === 0 && hours === 0 && minutes === 0 && seconds === 0) {
       clearInterval(selectedTime);
       refs.btnStart.disabled = false;
       refs.input.disabled = false;
