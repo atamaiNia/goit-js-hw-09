@@ -128,6 +128,8 @@ function convertMs(ms) {
   return { days, hours, minutes, seconds };
 }
 
+refs.btnStart.disabled = true;
+
 const options = {
   enableTime: true,
   time_24hr: true,
@@ -145,9 +147,9 @@ const options = {
         },
       });
       selectedDates[0] = new Date();
-      refs.btnStart.disabled = true;
     } else {
       selectedTime = selectedDates[0];
+      refs.btnStart.disabled = false;
     }
   },
 };

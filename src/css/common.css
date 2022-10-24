@@ -30,6 +30,12 @@ img {
   width: 100px;
   margin-left: 20px;
   background-color: #af69ef;
+  cursor: pointer;
+}
+
+.btn-start:disabled {
+  background-color: #e4e4e4;
+  color: rgb(175, 105, 239, 0.2);
 }
 
 .timer {
