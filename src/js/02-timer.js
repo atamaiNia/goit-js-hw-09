@@ -178,6 +178,15 @@ function onStartCountdown() {
       refs.btnStart.disabled = false;
       refs.input.disabled = false;
     }
+
+    if (days <= 0 && hours <= 0 && minutes <= 0 && seconds <= 0) {
+      refs.days.textContent = addLeadingZero(0);
+      refs.hours.textContent = addLeadingZero(0);
+      refs.minutes.textContent = addLeadingZero(0);
+      refs.seconds.textContent = addLeadingZero(0);
+      refs.input.disabled = true;
+      refs.btnStart.disabled = true;
+    }
   }, 1000);
 }
 
